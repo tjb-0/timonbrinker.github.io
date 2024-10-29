@@ -463,10 +463,20 @@ h1:first-child {
 
 /* Nested ordered list for ToC */
   /* Center navigation links */
+
+  /* Adjust font size and padding for smaller screens */
+  @media (max-width: 600px) {
+    nav a {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+    }
+  }
+
   nav {
     display: flex;
     justify-content: center;
     gap: 1.5rem; /* Space between links */
+    flex-wrap: wrap; /* Allows links to wrap on small screens */
     margin-top: 1rem;
   }
 
