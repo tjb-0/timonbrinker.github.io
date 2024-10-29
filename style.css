@@ -462,14 +462,30 @@ h1:first-child {
 }
 
 /* Nested ordered list for ToC */
+  /* Center navigation links */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between links */
+    margin-top: 1rem;
+  }
+
+  nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from header */
+  }
+
 nav ol {
+  justify-content: center;
   counter-reset: item;
   padding-left: 2rem;
 }
 nav li {
+  justify-content: center;
   display: block;
 }
 nav li::before {
+  justify-content: center;
   content: counters(item, '.') ' ';
   counter-increment: item;
   padding-right: 0.85rem;
@@ -639,6 +655,36 @@ input.sidenote-toggle {
   }
 }
 
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    margin: 0.5rem 0;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  footer .social-icons a {
+    display: inline-block;
+  }
+
+  footer .social-icons a img {
+    width: 24px; /* Adjust icon size if needed */
+    height: 24px;
+  }
+
 /* Make footnote text smaller and left align it (looks bad with long URLs) */
 .footnotes p {
   text-align: left;
@@ -687,6 +733,14 @@ h1 {
   font-size: 2.5rem;
   line-height: 3.25rem;
   margin-bottom: 1.625rem;
+}
+
+.entry {
+  margin-bottom: 1rem;
+}
+
+.entry p {
+  margin: 0.2rem 0;
 }
 
 h2 {

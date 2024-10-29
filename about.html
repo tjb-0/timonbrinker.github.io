@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Site with LaTeX.css Header</title>
+
+  <!-- Include LaTeX.css Stylesheet -->
+  <link rel="stylesheet" href="https://latex.vercel.app/style.css" />
+  <!-- Include Syntax Highlighting Stylesheet -->
+  <link rel="stylesheet" href="https://latex.vercel.app/prism/prism.css" />
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+</head>
+
+<body>
+  <!-- HEADER SECTION -->
+  <header>
+    <h1><span class="author">Timon Josias Otis Brinker</span></h1>
+    <nav>
+      <a href="about.html">About Me</a>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- Section for Getting Started -->
+    <section id="getting-started">
+      <h2>Getting Started</h2>
+      <p>Instructions and information to get started with the site.</p>
+    </section>
+
+    <!-- Section for About Me -->
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>This section contains information about me, my background, and my interests.</p>
+    </section>
+  </main>
+
+  <!-- FOOTER (Optional) -->
+  <footer>
+    <p>Footer content here</p>
+  </footer>
+
+  <!-- Optional: Dark Mode Toggle Script -->
+  <script>
+    const darkModeToggle = document.createElement("button");
+    darkModeToggle.textContent = "Toggle Dark Mode";
+    document.body.appendChild(darkModeToggle);
+    darkModeToggle.addEventListener("click", () => {
+      document.body.classList.toggle("latex-dark");
+    });
+  </script>
+</body>
+
+</html>
